@@ -1,0 +1,130 @@
+.ashl__header{
+    display: flex;
+   
+    height: 610px;
+}
+
+.ashl__header-content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.ashl__header-content h1{
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 72px;
+    width: 500px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+    margin-top: 20px;
+}
+
+.ashl__header-content p{
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 27px;
+    width: 500px;
+    color: rgb(38,80,47);
+    margin-top: 1.5rem;
+
+}
+
+.ashl__header-content__input{
+    display: flex;
+    width: 25%;
+    margin: 2rem 0 1rem;
+}
+
+
+
+.ashl__header-content__input button{
+    flex: 0.6;
+    width: 100%;
+    min-height: 50px;
+    background: rgb(38,80,47);
+    color: #fff;
+    height: 73px;
+    border-radius: 5px 0px 0px 5px;
+    line-height: 27px;
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    padding: 0 1rem;
+    border: none;
+    border-radius: 50px;
+
+}
+
+.ashl__header-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ashl__header-image img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+@media screen and (max-width: 1050px) {
+    .ashl__header{
+        flex-direction: column;
+    }
+
+    .ashl__header-container{
+        margin: 0 0 3rem;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .ashl__header h1{
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .ashl__header p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .ashl__header-content__input input,
+    .ashl__header-content__input button{
+        font-size: 16px;
+        line-height: 24px;
+        height: 30px; /* Decrease height */
+        padding: 0.5rem; 
+    }
+
+}
+
+@media screen and (max-width: 490px){
+    .ashl__header h1{
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .ashl__header p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .ashl__header-content__input input,
+    .ashl__header-content__input button{
+        font-size: 12px;
+        line-height: 16px;
+        height: 25px; /* Decrease height */
+        padding: 0.5rem; /* Decrease padding */
+    }
+    
+}
